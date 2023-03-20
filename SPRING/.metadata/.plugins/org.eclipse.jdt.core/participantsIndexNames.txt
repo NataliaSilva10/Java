@@ -1,0 +1,21 @@
+INDEX VERSION 1.131
+C:\Users\Natalia\Desktop\coding dojo\JAVA\springProjects\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\689486252.index
+\DisplayDate\src\main\java
+C:\Users\Natalia\Desktop\coding dojo\JAVA\springProjects\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1117671117.index
+\HelloWorld\src\main\java
+C:\Users\Natalia\Desktop\coding dojo\JAVA\springProjects\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2431433862.index
+\Daikichi\src\main\java
+C:\Users\Natalia\Desktop\coding dojo\JAVA\springProjects\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1127098905.index
+\Hopper\src\main\java
+C:\Users\Natalia\Desktop\coding dojo\JAVA\springProjects\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\4142594119.index
+\Java23_BooksAPI-main_Java23_BooksAPI-main\src\main\java
+C:\Users\Natalia\Desktop\coding dojo\JAVA\springProjects\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1979133176.index
+\fruityLoops\src\main\java
+C:\Users\Natalia\Desktop\coding dojo\JAVA\springProjects\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\469433069.index
+\helloHuman\src\main\java
+C:\Users\Natalia\Desktop\coding dojo\JAVA\springProjects\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2160333360.index
+\helloHuman\src\main\java
+C:\Users\Natalia\Desktop\coding dojo\JAVA\springProjects\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1265765534.index
+\DisplayDate\src\main\java
+C:\Users\Natalia\Desktop\coding dojo\JAVA\springProjects\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\182793120.index
+\Hopper\src\main\java
