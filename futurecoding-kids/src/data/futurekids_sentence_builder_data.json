@@ -1,0 +1,79 @@
+{
+  "schemaVersion": "1.0.0",
+  "feature": "FutureKids Create Stories - Build a Sentence",
+  "languages": ["en", "pt", "es"],
+  "defaultLanguage": "en",
+  "imageUsageNote": "Image assets are intentionally null. Do not copy HazelSprout images without written permission. Generate or commission original FutureKids illustrations from originalIllustrationPrompt, then set asset to the local public path.",
+  "interaction": {
+    "mode": "drag-and-drop",
+    "allowTapToAdd": true,
+    "allowReordering": true,
+    "checkAnswer": "Compare arranged tokens with sentence.tokens after trimming punctuation and ignoring case.",
+    "feedback": {
+      "correct": {"en": "Great job! You built the sentence!", "pt": "Muito bem! Você montou a frase!", "es": "¡Muy bien! ¡Construiste la oración!"},
+      "tryAgain": {"en": "Almost! Try moving the words around.", "pt": "Quase! Tente mudar as palavras de lugar.", "es": "¡Casi! Intente mudar as palavras de lugar."}
+    }
+  },
+  "activities": [
+    {
+      "id": "butterfly-garden", "title": {"en": "A Beautiful Butterfly", "pt": "Uma Linda Borboleta", "es": "Una Mariposa Hermosa"}, "ageBand": "5-7",
+      "image": {"asset": null, "alt": {"en": "A child looking at a colorful butterfly among garden flowers", "pt": "Uma criança observando uma borboleta colorida entre flores no jardim", "es": "Un niño observa una mariposa colorida entre las flores del jardín"}, "originalIllustrationPrompt": "Original children's picture-book illustration: a young child looking with wonder at a bright butterfly among cheerful garden flowers; soft watercolor textures, warm gentle light, rounded friendly shapes, pastel lavender, yellow and mint accents, uncluttered composition, no text, landscape 4:3."},
+      "sentences": {"en": {"text": "I see a beautiful butterfly.", "tokens": ["I", "see", "a", "beautiful", "butterfly"], "distractors": ["run", "blue"]}, "pt": {"text": "Eu vejo uma linda borboleta.", "tokens": ["Eu", "vejo", "uma", "linda", "borboleta"], "distractors": ["corro", "azul"]}, "es": {"text": "Veo una hermosa mariposa.", "tokens": ["Veo", "una", "hermosa", "mariposa"], "distractors": ["corro", "azul"]}},
+      "learningFocus": ["subject", "verb", "article", "adjective", "noun"]
+    },
+    {
+      "id": "watering-flowers", "title": {"en": "The Garden Helper", "pt": "Ajudando no Jardim", "es": "Ayudando en el Jardín"}, "ageBand": "5-7",
+      "image": {"asset": null, "alt": {"en": "A child watering flowers with a small watering can", "pt": "Uma criança regando flores com um pequeno regador", "es": "Un niño riega las flores con una regadera pequeña"}, "originalIllustrationPrompt": "Original whimsical watercolor picture-book scene of a happy child watering colorful flowers with a small watering can in a sunny garden; soft pastel palette, gentle expressive character, warm cozy mood, no text, landscape 4:3."},
+      "sentences": {"en": {"text": "The girl waters the flowers.", "tokens": ["The", "girl", "waters", "the", "flowers"], "distractors": ["eats", "stars"]}, "pt": {"text": "A menina rega as flores.", "tokens": ["A", "menina", "rega", "as", "flores"], "distractors": ["come", "estrelas"]}, "es": {"text": "La niña riega las flores.", "tokens": ["La", "niña", "riega", "las", "flores"], "distractors": ["come", "estrellas"]}},
+      "learningFocus": ["article", "subject", "verb", "object"]
+    },
+    {
+      "id": "playful-puppy", "title": {"en": "The Playful Puppy", "pt": "O Cachorrinho Brincalhão", "es": "El Cachorrito Juguetón"}, "ageBand": "5-7",
+      "image": {"asset": null, "alt": {"en": "A fluffy puppy playing with a red ball in a garden", "pt": "Um cachorrinho fofo brincando com uma bola vermelha no jardim", "es": "Un perrito esponjoso juega con una pelota roja en el jardín"}, "originalIllustrationPrompt": "Original soft storybook watercolor illustration of an adorable fluffy puppy happily chasing a red ball on green grass; flowers and a cozy home in the background, child-friendly rounded forms, pastel colors, no text, landscape 4:3."},
+      "sentences": {"en": {"text": "The puppy chases the red ball.", "tokens": ["The", "puppy", "chases", "the", "red", "ball"], "distractors": ["sleeps", "green"]}, "pt": {"text": "O cachorrinho persegue a bola vermelha.", "tokens": ["O", "cachorrinho", "persegue", "a", "bola", "vermelha"], "distractors": ["dorme", "verde"]}, "es": {"text": "El perrito persigue la pelota roja.", "tokens": ["El", "perrito", "persigue", "la", "pelota", "roja"], "distractors": ["duerme", "verde"]}},
+      "learningFocus": ["article", "subject", "verb", "adjective", "object"]
+    },
+    {
+      "id": "sleepy-cat", "title": {"en": "The Sleepy Cat", "pt": "O Gato Sonolento", "es": "El Gato Soñoliento"}, "ageBand": "5-7",
+      "image": {"asset": null, "alt": {"en": "A small orange cat sleeping curled up on a soft cushion", "pt": "Um pequeno gato laranja dormindo enrolado em uma almofada macia", "es": "Un pequeño gato naranja duerme acurrucado sobre un cojín suave"}, "originalIllustrationPrompt": "Original cozy watercolor children's book illustration of a small orange cat curled up asleep on a lavender cushion beside a sunny window; peaceful gentle mood, soft pastel palette, no text, landscape 4:3."},
+      "sentences": {"en": {"text": "The little cat is sleeping.", "tokens": ["The", "little", "cat", "is", "sleeping"], "distractors": ["jumping", "big"]}, "pt": {"text": "O gatinho está dormindo.", "tokens": ["O", "gatinho", "está", "dormindo"], "distractors": ["pulando", "grande"]}, "es": {"text": "El gatito está durmiendo.", "tokens": ["El", "gatito", "está", "durmiendo"], "distractors": ["saltando", "grande"]}},
+      "learningFocus": ["article", "adjective", "subject", "verb"]
+    },
+    {
+      "id": "colorful-kite", "title": {"en": "A Kite in the Sky", "pt": "Uma Pipa no Céu", "es": "Una Cometa en el Cielo"}, "ageBand": "5-7",
+      "image": {"asset": null, "alt": {"en": "A child flying a colorful kite on a breezy hill", "pt": "Uma criança soltando uma pipa colorida em uma colina com vento", "es": "Un niño vuela una cometa colorida en una colina ventosa"}, "originalIllustrationPrompt": "Original dreamy picture-book watercolor illustration of a joyful child flying a rainbow kite on a grassy hill; fluffy clouds and gentle breeze, soft pastel colors, expressive friendly character, no text, landscape 4:3."},
+      "sentences": {"en": {"text": "The colorful kite flies high.", "tokens": ["The", "colorful", "kite", "flies", "high"], "distractors": ["swims", "low"]}, "pt": {"text": "A pipa colorida voa alto.", "tokens": ["A", "pipa", "colorida", "voa", "alto"], "distractors": ["nada", "baixo"]}, "es": {"text": "La cometa colorida vuela alto.", "tokens": ["La", "cometa", "colorida", "vuela", "alto"], "distractors": ["nada", "bajo"]}},
+      "learningFocus": ["article", "noun", "adjective", "verb", "adverb"]
+    },
+    {
+      "id": "moon-explorer", "title": {"en": "The Moon Explorer", "pt": "O Explorador da Lua", "es": "El Explorador de la Luna"}, "ageBand": "8-9",
+      "image": {"asset": null, "alt": {"en": "A friendly astronaut exploring the moon and looking at Earth", "pt": "Um astronauta simpático explorando a Lua e olhando para a Terra", "es": "Un astronauta simpático explora la Luna y mira la Tierra"}, "originalIllustrationPrompt": "Original magical children's storybook watercolor illustration of a friendly young astronaut standing on the moon and looking at a beautiful blue Earth; tiny stars and a small rocket in the distance, gentle wonder, pastel space colors, no text, landscape 4:3."},
+      "sentences": {"en": {"text": "The astronaut explores the bright moon.", "tokens": ["The", "astronaut", "explores", "the", "bright", "moon"], "distractors": ["forgets", "dark"]}, "pt": {"text": "O astronauta explora a Lua brilhante.", "tokens": ["O", "astronauta", "explora", "a", "Lua", "brilhante"], "distractors": ["esquece", "escura"]}, "es": {"text": "El astronauta explora la Luna brillante.", "tokens": ["El", "astronauta", "explora", "la", "Luna", "brillante"], "distractors": ["olvida", "oscura"]}},
+      "learningFocus": ["subject", "verb", "object", "adjective"]
+    },
+    {
+      "id": "turtle-walk", "title": {"en": "The Little Turtle", "pt": "A Pequena Tartaruga", "es": "La Pequeña Tortuga"}, "ageBand": "8-9",
+      "image": {"asset": null, "alt": {"en": "A cheerful little turtle walking along a forest path", "pt": "Uma pequena tartaruga alegre caminhando por uma trilha na floresta", "es": "Una pequeña tortuga alegre camina por un sendero del bosque"}, "originalIllustrationPrompt": "Original gentle watercolor children's book scene of a cheerful little green turtle walking along a winding forest path with mushrooms and tiny flowers; warm sunlight, soft rounded shapes, no text, landscape 4:3."},
+      "sentences": {"en": {"text": "The small turtle walks slowly.", "tokens": ["The", "small", "turtle", "walks", "slowly"], "distractors": ["flies", "quickly"]}, "pt": {"text": "A pequena tartaruga caminha devagar.", "tokens": ["A", "pequena", "tartaruga", "caminha", "devagar"], "distractors": ["voa", "rapidamente"]}, "es": {"text": "La pequeña tortuga camina despacio.", "tokens": ["La", "pequeña", "tortuga", "camina", "despacio"], "distractors": ["vuela", "rápidamente"]}},
+      "learningFocus": ["article", "adjective", "subject", "verb", "adverb"]
+    },
+    {
+      "id": "picnic-friends", "title": {"en": "A Picnic with Friends", "pt": "Um Piquenique com Amigos", "es": "Un Picnic con Amigos"}, "ageBand": "8-9",
+      "image": {"asset": null, "alt": {"en": "Two friends sharing fruit at a picnic under a tree", "pt": "Dois amigos dividindo frutas em um piquenique debaixo de uma árvore", "es": "Dos amigos comparten fruta en un picnic debajo de un árbol"}, "originalIllustrationPrompt": "Original warm watercolor picture-book illustration of two young friends having a picnic under a leafy tree, sharing apples and sandwiches on a blanket; sunny park, joyful inclusive characters, pastel colors, no text, landscape 4:3."},
+      "sentences": {"en": {"text": "We share fresh fruit at the picnic.", "tokens": ["We", "share", "fresh", "fruit", "at", "the", "picnic"], "distractors": ["hide", "old"]}, "pt": {"text": "Nós compartilhamos frutas frescas no piquenique.", "tokens": ["Nós", "compartilhamos", "frutas", "frescas", "no", "piquenique"], "distractors": ["escondemos", "velhas"]}, "es": {"text": "Compartimos fruta fresca en el picnic.", "tokens": ["Compartimos", "fruta", "fresca", "en", "el", "picnic"], "distractors": ["escondemos", "vieja"]}},
+      "learningFocus": ["pronoun", "verb", "adjective", "noun", "preposition"]
+    },
+    {
+      "id": "rainy-day", "title": {"en": "Dancing in the Rain", "pt": "Dançando na Chuva", "es": "Bailando bajo la Lluvia"}, "ageBand": "10-12",
+      "image": {"asset": null, "alt": {"en": "A child in a yellow raincoat jumping in a puddle", "pt": "Uma criança de capa amarela pulando em uma poça", "es": "Un niño con impermeable amarillo salta en un charco"}, "originalIllustrationPrompt": "Original whimsical watercolor children's story illustration of a joyful child wearing a bright yellow raincoat and boots, jumping in a puddle during gentle rain; colorful umbrellas in the distance, cozy playful mood, no text, landscape 4:3."},
+      "sentences": {"en": {"text": "After the rain, we jump in puddles.", "tokens": ["After", "the", "rain", "we", "jump", "in", "puddles"], "distractors": ["before", "sleep"]}, "pt": {"text": "Depois da chuva, nós pulamos nas poças.", "tokens": ["Depois", "da", "chuva", "nós", "pulamos", "nas", "poças"], "distractors": ["antes", "dormimos"]}, "es": {"text": "Después de la lluvia, saltamos en los charcos.", "tokens": ["Después", "de", "la", "lluvia", "saltamos", "en", "los", "charcos"], "distractors": ["antes", "dormimos"]}},
+      "learningFocus": ["timeConnector", "subject", "verb", "preposition", "pluralNoun"]
+    },
+    {
+      "id": "secret-treehouse", "title": {"en": "The Secret Treehouse", "pt": "A Casa na Árvore Secreta", "es": "La Casa del Árbol Secreta"}, "ageBand": "10-12",
+      "image": {"asset": null, "alt": {"en": "Two friends discovering a cozy treehouse in a magical forest", "pt": "Dois amigos descobrindo uma casa aconchegante na árvore em uma floresta mágica", "es": "Dos amigos descubren una acogedora casa del árbol en un bosque mágico"}, "originalIllustrationPrompt": "Original enchanting watercolor storybook illustration of two adventurous children discovering a cozy wooden treehouse hidden among tall trees, friendly squirrels nearby, golden afternoon light, soft magical atmosphere, pastel greens and lavender accents, no text, landscape 4:3."},
+      "sentences": {"en": {"text": "We found a secret treehouse in the forest.", "tokens": ["We", "found", "a", "secret", "treehouse", "in", "the", "forest"], "distractors": ["lost", "ocean"]}, "pt": {"text": "Encontramos uma casa secreta na árvore da floresta.", "tokens": ["Encontramos", "uma", "casa", "secreta", "na", "árvore", "da", "floresta"], "distractors": ["perdemos", "oceano"]}, "es": {"text": "Encontramos una casa secreta en el árbol del bosque.", "tokens": ["Encontramos", "una", "casa", "secreta", "en", "el", "árbol", "del", "bosque"], "distractors": ["perdimos", "océano"]}},
+      "learningFocus": ["pronoun", "pastTense", "article", "adjective", "preposition"]
+    }
+  ]
+}

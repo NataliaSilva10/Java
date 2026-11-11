@@ -1,0 +1,57 @@
+.tbot { position: relative; display: inline-block; flex-shrink: 0; }
+.tbot svg { overflow: visible; display: block; }
+
+.tbot-shadow { fill: rgba(121, 104, 207, 0.14); transform-origin: 100px 200px; animation: tbot-shadow 3.2s ease-in-out infinite; }
+.tbot-body { transform-origin: 100px 120px; animation: tbot-float 3.2s ease-in-out infinite; }
+.tbot-head { transform-origin: 100px 132px; transition: transform 0.4s ease; }
+.tbot-antenna-bulb { transition: fill 0.3s ease; }
+.tbot-ear { fill: #b8e9e0; transition: fill 0.3s ease, filter 0.3s ease; }
+.tbot-blink { transform-origin: 100px 77px; animation: tbot-blink 4.6s infinite; }
+.tbot-eyes { transition: transform 0.35s ease; }
+.tbot-eyes--up { transform: translate(5px, -5px); }
+.tbot-arm { transform-box: fill-box; transition: transform 0.35s ease; }
+.tbot-arm--left { transform-origin: 100% 0%; }
+.tbot-arm--right { transform-origin: 0% 0%; }
+
+/* speaking */
+.tbot--talking .tbot-mouth-talk { transform-origin: 100px 97px; animation: tbot-talk 0.28s ease-in-out infinite alternate; }
+.tbot--talking .tbot-antenna-bulb { animation: tbot-pulse 0.6s ease-in-out infinite alternate; }
+
+/* listening */
+.tbot--listening .tbot-ear { fill: #8de0b1; filter: drop-shadow(0 0 6px #8de0b1); }
+.tbot--listening .tbot-antenna-bulb { fill: #8de0b1; animation: tbot-pulse 0.7s ease-in-out infinite alternate; }
+.tbot--listening .tbot-head { transform: rotate(-4deg); }
+.tbot-waves path { animation: tbot-wave 1s ease-in-out infinite; }
+.tbot-waves path:nth-child(2), .tbot-waves path:nth-child(4) { animation-delay: 0.25s; }
+
+/* thinking */
+.tbot--thinking .tbot-head { transform: rotate(5deg); }
+.tbot-thought circle { animation: tbot-dot 1.2s ease-in-out infinite; }
+.tbot-thought circle:nth-child(2) { animation-delay: 0.2s; }
+.tbot-thought circle:nth-child(3) { animation-delay: 0.4s; }
+
+/* happy */
+.tbot--happy .tbot-body { animation: tbot-jump 0.6s ease-in-out 2, tbot-float 3.2s ease-in-out 1.2s infinite; }
+.tbot--happy .tbot-arm--left { transform: rotate(40deg); }
+.tbot--happy .tbot-arm--right { transform: rotate(-40deg); }
+.tbot-sparkles path { transform-box: fill-box; transform-origin: center; animation: tbot-sparkle 0.9s ease-in-out infinite alternate; }
+
+/* encouraging */
+.tbot--encouraging .tbot-head { transform: rotate(-6deg); }
+.tbot--encouraging .tbot-arm--right { transform: rotate(-30deg); }
+.tbot--encouraging .tbot-heart { transform-box: fill-box; transform-origin: center; animation: tbot-heartbeat 0.8s ease-in-out infinite; }
+
+@keyframes tbot-float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-6px); } }
+@keyframes tbot-shadow { 0%, 100% { transform: scaleX(1); } 50% { transform: scaleX(0.88); } }
+@keyframes tbot-blink { 0%, 92%, 100% { transform: scaleY(1); } 95% { transform: scaleY(0.1); } }
+@keyframes tbot-talk { from { transform: scaleY(0.35); } to { transform: scaleY(1.15); } }
+@keyframes tbot-pulse { from { opacity: 0.55; } to { opacity: 1; } }
+@keyframes tbot-wave { 0%, 100% { opacity: 0.2; } 50% { opacity: 1; } }
+@keyframes tbot-dot { 0%, 100% { opacity: 0.3; transform: translateY(0); } 50% { opacity: 1; transform: translateY(-3px); } }
+@keyframes tbot-jump { 0%, 100% { transform: translateY(0); } 40% { transform: translateY(-16px) scale(1.03); } }
+@keyframes tbot-sparkle { from { transform: scale(0.6) rotate(0); opacity: 0.6; } to { transform: scale(1.2) rotate(20deg); opacity: 1; } }
+@keyframes tbot-heartbeat { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.15); } }
+
+@media (prefers-reduced-motion: reduce) {
+  .tbot, .tbot * { animation: none !important; transition: none !important; }
+}

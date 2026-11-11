@@ -1,0 +1,88 @@
+/* Discover Cultures */
+.dc { --dc-ink: #33305a; --dc-muted: #7d7896; --dc-en: #cdbdff; --dc-es: #ffc9b0; --dc-pt: #a8e6c2; display: grid; gap: 18px; color: var(--dc-ink); }
+.dc h2 { display: flex; align-items: center; gap: 8px; margin: 0; font-size: 22px; font-weight: 800; }
+.dc h3 { margin: 0 0 8px; font-size: 16px; font-weight: 800; }
+.dc p { margin: 4px 0 0; color: var(--dc-muted); font-weight: 600; }
+
+.dc-map-card { padding: 18px; border-radius: 28px; background: linear-gradient(140deg, #fff8dc, #eef6ff); box-shadow: 0 10px 28px rgba(90, 70, 160, 0.08); }
+.dc-map-head { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 12px; margin-bottom: 12px; }
+.dc-filters { display: flex; flex-wrap: wrap; gap: 6px; }
+.dc-filter { padding: 8px 13px; border-radius: 999px; border: 2px solid #efe7cf; background: #fff; font: inherit; font-size: 13px; font-weight: 800; color: var(--dc-ink); cursor: pointer; transition: transform 0.15s; }
+.dc-filter:hover { transform: translateY(-2px); }
+.dc-filter.active { border-color: #9c83f5; background: #f1ebff; color: #5b43c4; }
+.dc-map-wrap { border-radius: 22px; overflow: hidden; background: radial-gradient(circle at 30% 30%, #d6efff 0, #b9e1fb 60%, #a6d6f6 100%); }
+.dc-map { display: block; width: 100%; height: auto; }
+.dc-land { fill: #fff6dc; stroke: #f1e2b6; stroke-width: 0.8; }
+.dc-country { stroke: #fff; stroke-width: 1; cursor: pointer; transition: opacity 0.2s, filter 0.2s; }
+.dc-country.dc-lang-en { fill: var(--dc-en); }
+.dc-country.dc-lang-es { fill: var(--dc-es); }
+.dc-country.dc-lang-pt { fill: var(--dc-pt); }
+.dc-country:hover, .dc-country.selected { filter: brightness(0.93) drop-shadow(0 0 4px rgba(122, 92, 224, 0.5)); }
+.dc-country.dim { opacity: 0.3; }
+.dc-pin { cursor: pointer; outline: none; }
+.dc-pin circle { fill: #fff; stroke: #9c83f5; stroke-width: 2.5; filter: drop-shadow(0 2px 3px rgba(0, 0, 0, 0.2)); transition: transform 0.2s; }
+.dc-pin.stamped circle { stroke: #2c9a5f; }
+.dc-pin.active circle, .dc-pin:focus-visible circle { transform: scale(1.3); stroke: #ff7aa5; }
+.dc-pin-label { font-size: 15px; font-weight: 800; fill: #33305a; paint-order: stroke; stroke: #fff; stroke-width: 4px; }
+.dc-legend { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 10px; font-size: 13px; font-weight: 800; color: var(--dc-muted); }
+.dc-key::before { content: ""; display: inline-block; width: 14px; height: 14px; margin-right: 6px; border-radius: 4px; vertical-align: -2px; }
+.dc-key.dc-lang-en::before { background: var(--dc-en); }
+.dc-key.dc-lang-es::before { background: var(--dc-es); }
+.dc-key.dc-lang-pt::before { background: var(--dc-pt); }
+
+.dc-columns { display: grid; grid-template-columns: minmax(0, 1.6fr) minmax(260px, 1fr); gap: 18px; align-items: start; }
+.dc-country-card { display: grid; gap: 14px; padding: 20px; border-radius: 28px; background: #fff; box-shadow: 0 8px 24px rgba(90, 70, 160, 0.07); animation: dc-in 0.45s cubic-bezier(0.2, 1.4, 0.4, 1); }
+.dc-country-head { display: flex; align-items: center; gap: 14px; }
+.dc-flag { font-size: 64px; line-height: 1; animation: dc-wave 2.4s ease-in-out infinite; transform-origin: left center; }
+.dc-greeting { display: inline-flex; align-items: center; gap: 8px; justify-self: start; padding: 12px 18px; border-radius: 18px; border: 0; background: linear-gradient(135deg, #9c83f5, #7a5ce0); color: #fff; font: inherit; font-size: 16px; font-weight: 700; cursor: pointer; box-shadow: 0 6px 16px rgba(122, 92, 224, 0.28); transition: transform 0.15s; }
+.dc-greeting:hover { transform: translateY(-2px); }
+.dc-cards { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+.dc-card { display: grid; gap: 3px; padding: 14px; border-radius: 20px; animation: dc-in 0.5s both; transition: transform 0.2s; }
+.dc-card:hover { transform: translateY(-3px) rotate(-1deg); }
+.dc-card--tradition { background: #ffe8f1; }
+.dc-card--food { background: #fff3c4; }
+.dc-card--music { background: #e3f2ff; }
+.dc-card--fact { background: #e2f7ec; }
+.dc-card-emoji { font-size: 32px; }
+.dc-card small { color: var(--dc-muted); font-size: 10px; font-weight: 900; letter-spacing: 1px; text-transform: uppercase; }
+.dc-card strong { font-size: 16px; }
+.dc-card p { margin: 0; font-size: 13px; line-height: 1.45; }
+.dc-words > div { display: grid; gap: 6px; }
+.dc-words button { display: grid; grid-template-columns: auto 1fr auto; align-items: center; gap: 10px; padding: 10px 12px; border-radius: 14px; border: 1px solid #ece4ff; background: #faf8ff; font: inherit; color: var(--dc-ink); text-align: left; cursor: pointer; transition: transform 0.15s; }
+.dc-words button:hover { transform: translateX(3px); }
+.dc-words button strong { font-size: 16px; color: #5b43c4; }
+.dc-words button span { color: var(--dc-muted); font-size: 13px; font-weight: 700; }
+.dc-quiz { padding: 14px; border-radius: 20px; background: #fffaf0; }
+.dc-quiz > p { color: var(--dc-ink); font-weight: 800; }
+.dc-quiz-options { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 10px; }
+.dc-quiz-options button { padding: 10px 16px; border-radius: 14px; border: 2px solid #f0e3c0; background: #fff; font: inherit; font-size: 15px; font-weight: 800; color: var(--dc-ink); cursor: pointer; transition: transform 0.15s; }
+.dc-quiz-options button:hover:not(:disabled) { transform: translateY(-2px); }
+.dc-quiz-options button.right { background: #e2f7ec; border-color: #8fd4a8; color: #22704a; animation: dc-pop 0.4s; }
+.dc-quiz-options button.wrong { background: #fff1f3; border-color: #ffc4cf; animation: dc-shake 0.4s; }
+.dc-quiz-feedback { font-weight: 800 !important; color: var(--dc-ink) !important; }
+.dc-stamp-btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; padding: 14px 18px; border-radius: 18px; border: 0; background: linear-gradient(135deg, #ffd34d, #ffb000); color: #4d3800; font: inherit; font-size: 16px; font-weight: 800; cursor: pointer; box-shadow: 0 6px 16px rgba(224, 161, 0, 0.3); transition: transform 0.15s; }
+.dc-stamp-btn:hover:not(:disabled) { transform: translateY(-2px) rotate(-1deg); }
+.dc-stamp-btn.done { background: #e2f7ec; color: #22704a; box-shadow: none; cursor: default; }
+.dc-side { display: grid; gap: 14px; }
+.dc-passport, .dc-hellos { padding: 18px; border-radius: 24px; background: #fff; box-shadow: 0 8px 24px rgba(90, 70, 160, 0.07); }
+.dc-passport { background: linear-gradient(160deg, #2f3a7a, #4b4f99); color: #fff; }
+.dc-passport p { color: #d7d9ff; }
+.dc-stamps { display: grid; grid-template-columns: repeat(5, 1fr); gap: 8px; margin-top: 12px; }
+.dc-stamp { aspect-ratio: 1; border-radius: 50%; border: 2px dashed rgba(255, 255, 255, 0.5); background: transparent; color: rgba(255, 255, 255, 0.6); font: inherit; font-size: 18px; font-weight: 800; cursor: pointer; }
+.dc-stamp.got { border-style: solid; border-color: #ffd34d; background: rgba(255, 255, 255, 0.15); font-size: 24px; animation: dc-pop 0.5s; }
+.dc-hellos > div { display: grid; grid-template-columns: repeat(auto-fill, minmax(96px, 1fr)); gap: 8px; margin-top: 10px; }
+.dc-hellos button { display: grid; justify-items: center; gap: 2px; padding: 10px 6px; border-radius: 16px; border: 0; background: #f5f1ff; font: inherit; color: var(--dc-ink); cursor: pointer; transition: transform 0.15s; }
+.dc-hellos button:hover { transform: translateY(-3px) scale(1.03); background: #fff3c4; }
+.dc-hellos button span { font-size: 24px; }
+.dc-hellos button strong { font-size: 14px; }
+.dc-hellos button small { color: var(--dc-muted); font-size: 11px; font-weight: 700; }
+
+@keyframes dc-in { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: none; } }
+@keyframes dc-pop { 0% { transform: scale(0.7); } 60% { transform: scale(1.15); } 100% { transform: scale(1); } }
+@keyframes dc-shake { 0%, 100% { transform: translateX(0); } 25% { transform: translateX(-5px); } 75% { transform: translateX(5px); } }
+@keyframes dc-hop { 0%, 100% { transform: translateY(0); } 40% { transform: translateY(-6px); } }
+@keyframes dc-wave { 0%, 100% { transform: rotate(0); } 50% { transform: rotate(-6deg); } }
+
+@media (max-width: 900px) { .dc-columns { grid-template-columns: 1fr; } }
+@media (max-width: 480px) { .dc-cards { grid-template-columns: 1fr; } .dc-flag { font-size: 48px; } }
+@media (prefers-reduced-motion: reduce) { .dc * { animation: none !important; transition: none !important; } }

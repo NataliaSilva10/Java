@@ -1,0 +1,10 @@
+/* Open Sauce Sans (SIL Open Font License).
+   Regular weight is loaded from a local .woff because the 400 .woff2 file in
+   @fontsource/open-sauce-sans@5.3.0 is corrupted. Bolder weights come from the package. */
+@font-face {
+  font-family: "Open Sauce Sans";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+  src: url("./assets/fonts/open-sauce-sans-latin-400-normal.woff") format("woff");
+}
